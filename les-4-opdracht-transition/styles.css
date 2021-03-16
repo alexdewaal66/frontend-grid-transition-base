@@ -2,6 +2,10 @@
     --menu-bar-width: 60px;
     --menu-bar-height: 10px;
 }
+#container {
+    border: 1px solid grey;
+    padding: 10px;
+}
 
 #menu {
     background-color: #D84282;

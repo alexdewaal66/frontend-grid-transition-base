@@ -2,7 +2,7 @@
     display: grid;
     grid-template-rows: 50px auto 50px 50px 50px 50px 50px;
     grid-template-columns: 1fr;
-    grid-template-areas:"A" "B" "C" "D" "E" "." "F";
+    grid-template-areas:"item-a" "item-b" "item-c" "item-d" "item-e" "." "item-f";
     background-color: #ffefdb;
     gap: 16px 16px;
 }
@@ -17,28 +17,28 @@
     align-items: center;
 }
 
-#A {
-    grid-area: A;
+#a {
+    grid-area: item-a;
 }
 
-#B {
-    grid-area: B;
+#b {
+    grid-area: item-b;
 }
 
-#C {
-    grid-area: C;
+#c {
+    grid-area: item-c;
 }
 
-#D {
-    grid-area: D;
+#d {
+    grid-area: item-d;
 }
 
-#E {
-    grid-area: E;
+#e {
+    grid-area: item-e;
 }
 
-#F {
-    grid-area: F;
+#f {
+    grid-area: item-f;
 }
 
 
@@ -48,11 +48,11 @@
         grid-template-rows: 50px 190px 100px auto 50px;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas:
-        "A C C"
-        "B C C"
-        "B E D"
-        "B E ."
-        "F F F";
+        "item-a item-c item-c"
+        "item-b item-c item-c"
+        "item-b item-e item-d"
+        "item-b item-e ."
+        "item-f item-f item-f";
     }
 
 
