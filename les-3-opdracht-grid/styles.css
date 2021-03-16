@@ -1,25 +1,20 @@
 #container {
     display: grid;
-    /*flex-direction: column;*/
-    grid-template-rows: 50px 190px 100px auto 50px;
-    grid-template-columns: 33.3% 33.3% 33.4%;
-    grid-template-areas:
-        "A C C"
-        "B C C"
-        "B E D"
-        "B E ."
-        "F F F";
+    grid-template-rows: 50px auto 50px 50px 50px 50px 50px;
+    grid-template-columns: 1fr;
+    grid-template-areas:"A" "B" "C" "D" "E" "." "F";
     background-color: #ffefdb;
+    gap: 16px 16px;
 }
 
 .item {
-    /*display: flex;*/
+    display: flex;
     border: 2px solid #932F37;
-    margin: 8px;
+    /*margin: 8px;*/
     padding: 16px;
     background-color: #BA3B46;
-    /*justify-content: center;*/
-    /*align-items: center;*/
+    justify-content: center;
+    align-items: center;
 }
 
 #A {
@@ -45,3 +40,21 @@
 #F {
     grid-area: F;
 }
+
+
+@media only screen and (min-width: 576px) {
+
+    #container {
+        grid-template-rows: 50px 190px 100px auto 50px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "A C C"
+        "B C C"
+        "B E D"
+        "B E ."
+        "F F F";
+    }
+
+
+}
+
