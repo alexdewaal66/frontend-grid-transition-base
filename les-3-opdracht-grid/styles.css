@@ -1,0 +1,47 @@
+#container {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    grid-template-rows: 50px 190px 100px auto 50px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+        "A C C"
+        "B C C"
+        "B E D"
+        "B E ."
+        "F F F";
+    background-color: #ffefdb;
+}
+
+.item {
+    /*display: flex;*/
+    border: 2px solid #932F37;
+    margin: 8px;
+    padding: 16px;
+    background-color: #BA3B46;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+#A {
+    grid-area: A;
+}
+
+#B {
+    grid-area: B;
+}
+
+#C {
+    grid-area: C;
+}
+
+#D {
+    grid-area: D;
+}
+
+#E {
+    grid-area: E;
+}
+
+#F {
+    grid-area: F;
+}
